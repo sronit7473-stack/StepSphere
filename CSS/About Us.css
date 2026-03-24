@@ -1,0 +1,355 @@
+/*resetting the default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", "serif";
+}
+
+/* styling introduction section */
+.intro {
+  background-color: #0B1C39;
+  color: white;
+  height: 350px;
+  text-align: center;
+}
+
+.intro h1 {
+  padding: 30px;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.intro p {
+  margin-top: 15px;
+  line-height: 25px;
+  font-size: 20px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Container for goals, missions and opportunities */
+.section-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* Cards section */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(41, 39, 39, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Hover effect for card*/
+.card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* styles of Card Image */
+.card-image {
+  flex: 1 1 300px;
+  max-width: 45%;
+  min-width: 280px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+/* styles for Card Content */
+.card-content {
+  flex: 300px;
+  max-width: 50%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h2 {
+  margin: 10px 0;
+  font-weight: 900;
+  font-size: 40px;
+  color: #1a237e;
+  letter-spacing: 1.3px;
+}
+
+.card-content p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #424242;
+  margin-bottom: 18px;
+}
+
+.card-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.card-content ul li {
+  position: relative;
+  font-size: 18px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  color: #555555;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* stykes of first Letter */
+.card-content .first-letter {
+  font-size: 40px;
+  float: left;
+  line-height: 1;
+  padding-right: 5px;
+  font-weight: 900;
+  color: #1a237e;
+}
+
+
+/* Styling Team Members Section */
+
+.head h1 {
+  margin: 40px 0;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 1.3px;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+}
+
+/* style for each member */
+.member {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.10);
+  background-color: #F0F0F2;
+}
+
+.member:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+
+.member img {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.member .link {
+  margin-top: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.member .social-links1 {
+  list-style-type: none;
+  padding: 0;
+  bottom: 0;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.member .click{
+  font-size: 12px;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    margin-top: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.member .click:hover{
+      background-color: indianred;
+     transition: 0.4s;
+}
+/*styles for contact information and contact form */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.contact-info,
+.contact-form {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  height: 490px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+  background-color: #F0F0F2;
+  color: black;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.contact-form {
+  background-color: #F0F0F2;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  color: black;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #c2b8b8;
+  background-color: rgb(207, 209, 211);
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: rgb(207, 209, 211);
+  border: 1px solid #c2b8b8;
+  color: black;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: green;
+}
+
+/* Styles of footer*/
+.footer {
+  background-color: #0B1C39;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 20px;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+
+  font-size: 16px;
+  color: white;
+}
+
+.footer-section a {
+  text-decoration: none;
+
+}
+
+.footer-section a:hover {
+  color: red;
+}
+
+
+.footer-links,
+.quick-links {
+  list-style-type: none;
+  text-align: left;
+
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+
+.social-links2 {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links2 li {
+  margin-bottom: 5px;
+}
+
+.social-links2 li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+     <!--linking font-awesome from google-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/Portfolio.css">
+</head>
+<style>
+    /* Internal CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size:19px;
+    transition: 0.3s;
+    position: relative;
+}
+.nav-links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.nav-links a:hover::before{
+    width: 100%;
+}
+
+
+.icons i:hover{
+      color: indianred;
+
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+    margin-right: 15px;
+}
+</style>
+<body>
+    <nav class="navbar">
+      
+        <div class="logo">
+           <a href="/HTML/Home.html"><img src="/Image/StepSphereLogo.png" alt="Logo"></a> 
+        </div>
+
+        <div class="nav-links">
+            <a href="/home.html">Home</a>
+            <a href="/product.html">Product</a>
+            <a href="/HTML/Blog.html">Blog</a>
+            <a href="/HTML/Research.html">Research</a>
+            <a href="/HTML/About Us.html">About Us</a>
+        </div>
+        <div class="icons">
+            <i class="fa fa-search" style="margin-left: 30px;"></i>
+            <a href="login.html"><i class="fas fa-user-alt" style="margin-left: 13px;"></i></a> 
+            <i class="fa fa-shopping-cart" ></i>
+             
+        </div>
+    </nav>
+    <main>
+        <div class="photo-container">
+            <div class="photo">
+            <img src="/Image/AboutUs/ronit.jpeg" alt="Ronit Photo"></div>
+            <div class="details">
+                <h1>Ronit Rai</h1>
+                <h2>Home Page Designer</h2>
+                <p>
+                    Presently, I am enrolled in IIC college for my Bachelor's Degree.Here, you'll find work that shows the progress and lessons I have learned at college. All of my projects and assignments prove what I have studied by highlighting skills such as Web designing and development, working as a team, communicating. 
+                    It was great that you considered what I discussed.
+                    </p>
+              <div class="social-link">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+              </div>  
+            </div>
+        </div>
+    </main>
+     <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Itahari, Nepal</p>
+                <p>stepsphere2025@gmail.com</p>
+                <p>021-545978</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links2">
+                    <!--External Links-->
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <!--Footer Links-->
+                <ul class="quick-links">
+                    <h3>Quick Links</h3>
+                    <li><a href="/HTML/Home.html">Home</a></li>
+                    <li><a href="/HTML/Product.html">Product</a></li>
+                    <li><a href="/HTML/Blog.html">Blog</a></li>
+                    <li><a href="/HTML/Research.html">Research</a></li>
+                    <li><a href="/HTML/About Us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <!--Footer Links-->
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+      
+    <hr>
+    <!--Copyright section-->
+    <div class="footer-bottom">
+      <p>&copy; StepSphere 'Step Ahead, Stay Ahead'. All rights reserved.</p>
+    </div>
+    
+</body>
+</html>

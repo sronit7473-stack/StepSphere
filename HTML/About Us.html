@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!--link to external css-->
+  <link rel="stylesheet" href="/CSS/About Us.css">
+
+  <!--link to font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- Body section begins here -->
+
+<body>
+
+  <!--Navigation bar-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/HTML/Home.html"><img src="/Image/StepSphereLogo.png" alt="Logo"></a>
+      </div>
+      <div class="nav-links">
+        <a href="/HTML/Home.html">Home</a>
+        <a href="/HTML/Product.html">Product</a>
+        <a href="/HTML/Blog.html">Blog</a>
+        <a href="/HTML/Research.html">Research</a>
+        <a href="/HTML/About Us.html">About Us</a>
+      </div>
+      <div class="icons">
+        <i class="fa fa-search" style="margin-left: 15px;"></i>
+         <a href="login.html"><i class="fas fa-user-alt" style="margin-left: 13px;"></i></a> 
+      <a href="Product.html"><i class="fa fa-shopping-cart" ></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Internal Css for the navigation bar -->
+<style>
+    /* Internal CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size:19px;
+    transition: 0.3s;
+    position: relative;
+}
+.nav-links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.nav-links a:hover::before{
+    width: 100%;
+}
+
+
+.icons i:hover{
+      color: indianred;
+
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+    margin-right: 15px;
+}
+</style>
+
+  <!--Introduction section-->
+  <section class="intro">
+    <h1>Who we are?</h1>
+    <p>At StepSphere, you can look out for variety of classic, modern, sport footwears according to your desire and
+      needs.
+      Establshed in 2025, StepSphere has attracted thousands of customers through top class services. Dealing
+      with cusomers, fulfilling their needs in footwear selection is what makes us happy. <br>
+      <b> Wearing affordable footwears, You Step Ahead, Stay Ahead! </b>
+    </p>
+  </section>
+
+  <!-- section of goals, missions and opportunities -->
+  <section class="section-container">
+    <!-- Our Goals and Missions Section -->
+    <div class="card" style="background-color: white;">
+      <div class="card-image">
+        <figure><img src="/Image/AboutUs/goals.avif" alt="an image of  goal" /></figure>
+      </div>
+      <div class="card-content">
+        <h2>Our Goals and Missions</h2>
+        <p>
+          <span class="first-letter">E</span>stablished to provide fancy and affordable footwear, we never compromise in
+          quality of our product.
+          We aim customers to step ahead in style wearing the footwears of StepSphere.
+        </p>
+        <ul>
+          <li>Providing affordable products without compromising quality</li>
+          <li>Satisfy customers, every time they visit us</li>
+          <li>Become a leading brand in the footwear industry by 2030</li>
+          <li>Make customers stay ahead, every time they step forward</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Opportunities Section -->
+    <div class="card">
+      <div class="card-image">
+        <img src="/Image/AboutUs/opportunityy.avif" alt="an image of opportunities" />
+      </div>
+      <div class="card-content">
+        <h2>Opportunities</h2>
+        <p>
+          <span class="first-letter">W</span>e believe that youngests can do nothing and for the revolution through the
+          innovation in footwear industry, We welcome young minds.
+          Opportunities are available for talents who are either freshers or professionals.
+          Join our team and contribute your unique ideas to make a positive impact.
+        </p>
+        <ul>
+          <li>We offer career opportunities to freshers</li>
+          <li>We pay for your ideas; your plans are valuable</li>
+          <li>We use raw materials, leading to an eco-friendly environment</li>
+          <li>We love sports; our shoes perfectly suit you while playing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--Description of our team-->
+  <section class="team" style="  color: black;"> <!-- Inline CSS  -->
+    <div class="head">
+      <h1 style="color:#1a237e ;">Our People</h1>
+    </div>
+    <p class="people" style="text-align: center; font-size: 20px;">StepSphere stands high today just because of some
+      masterminds who passionately involved in making
+      the <br>
+      dream come true. No one had believed that we shall rise this higher in footwear industry. StepSphere will
+      continuely <br>
+      thrive in future as we have unique ideas from different members, their huge dedication and supports will not fade
+      away.</p>
+    <section class="team-members">
+      <!--First member-->
+      <div class="member">
+        <figure> <img src="/Image/AboutUs/prakash.JPG" alt="Member 1"></figure>
+        <h3>Pralad Neupane</h3>
+        <p class="role">| Team Leader | <br> Developer of About Us and Research Page</p>
+        <p>Guiding and leading team to achieve fruitful outcome of the project</p>
+        <ul class="link">
+          <!--External Links-->
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/praka5h_n?igsh=MWgwNG15eXdzNXZ6bw=="><i
+                class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+          <a href="/HTML/Portfolio_prakash.html"><button class="click">Uncover Me</button></a> 
+      </div>
+      <!--Second member-->
+      <div class="member">
+        <figure><img src="/Image/AboutUs/sarthak.jpeg" alt="Member 2"></figure>
+        <h3>Sarthak Niraula</h3>
+        <p class="role">| Blog Page Designer |</p>
+        <p>Designed Blog Page through the use of HTML5, CSS3 & JAVASCRIPT</p>
+        <ul class="social-links1">
+          <!--External Links-->
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+        <a href="/HTML/Portfolio_sarthak.html"><button class="click">Uncover Me</button></a> 
+      </div>
+      <!--Third member-->
+      <div class="member">
+        <figure> <img src="/Image/AboutUs/wedika.JPG" alt="Member 3"></figure>
+        <h3>Weedika Limbu</h3>
+        <p class="role">| Product Page Designer |</p>
+        <p>Designed StepSphere's product page using HTML, CSS and JAVASCRIPT.</p>
+        <ul class="social-links1">
+          <!--External Links-->
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+           <a href="/HTML/Portfolio_wedika.html"><button class="click">Uncover Me</button></a> 
+      </div>
+
+      <!-- Fourth Member -->
+      <div class="member">
+        <figure> <img src="/Image/AboutUs/ronit.jpeg" alt="Member 4"></figure>
+        <h3>Ronit Rai</h3>
+        <p class="role">| Home page Designer |</p>
+        <p>Mastermind behind the development of visually appealing Home Page through the use of HTML, CSS and
+          JAVASCRIPT.</p>
+        <ul class="social-links1">
+          <!--External Links-->
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+          <a href="/HTML/Portfolio_ronit.html"><button class="click">Uncover Me</button></a> 
+      </div>
+    </section>
+  </section>
+
+  <!--Contact Informaton and Contact form of StepSphere-->
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><strong>OFFICE ADDRESS</strong><br>Itahari, Nepal</p>
+      <p><strong>PHONE NUMBERS</strong><br>021-545978, 9811084759</p>
+      <p><strong>EMAIL ADDRESS</strong><br>stepsphere2025@gmail.com</p>
+    </div>
+    <div class="contact-form">
+      <h2 style="color: black;">Want to Buy Directly from us?</h2>
+      <form onsubmit="return validateform()"> <!--calling function-->
+        <input type="text" placeholder="First Name" id="fname">
+        <input type="text" placeholder="Last Name " id="lname">
+        <input type="text" placeholder="Phone Number " id="num">
+        <input type="email" placeholder="Email " id="email">
+        <textarea name="message" placeholder="Message " id="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!--Footer Section-->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Itahari, Nepal</p>
+        <p>stepsphere2025@gmail.com</p>
+        <p>021-545978</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links2">
+          <!--External Links-->
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <!--Footer Links-->
+        <ul class="quick-links">
+          <h3>Quick Links</h3>
+          <li><a href="/HTML/Home.html">Home</a></li>
+          <li><a href="/HTML/Product.html">Product</a></li>
+          <li><a href="/HTML/Blog.html">Blog</a></li>
+          <li><a href="/HTML/Research.html">Research</a></li>
+          <li><a href="/HTML/About Us.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <!--Footer Links-->
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Student Discount</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <!--Copyright section-->
+    <div class="footer-bottom">
+      <p>&copy; StepSphere 'Step Ahead, Stay Ahead'. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!--script for the form validation of contact form-->
+  <script>
+    function validateform() {
+      var firstname = document.getElementById('fname').value;
+      var lastname = document.getElementById('lname').value;
+      var phonenum = document.getElementById('num').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      if (firstname && lastname && phonenum && email && message) {
+        alert("Form Submitted!");
+        return true;
+      }
+
+      else {
+        alert("Fill in all the required fields!")
+        return false;
+      }
+
+    }
+  </script>
+
+</body>
+
+</html>

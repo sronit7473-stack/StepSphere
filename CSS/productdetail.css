@@ -1,0 +1,103 @@
+/* Reset default browser styles and set base font */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        
+/* Style the main product detail section */
+        .product-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .product-detail h1 {
+            font-size: 2.5rem;
+            color: #14213d;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+/* Style the product image container */
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+/* Style the product description text */
+        .product-description {
+            max-width: 800px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #666;
+            text-align: left;
+        }
+        
+        .product-description p {
+            margin-bottom: 15px;
+        }
+
+/* Style the user rating section */
+        .user-rating {
+            margin: 15px 0;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            gap: 15px;
+        }
+        
+        .user-rating i {
+            color: #ffc107;
+            text-align:  center;
+            margin-right: 2px;
+        }
+        
+/* Style the product details section */
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align:  center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-direction: column;
+
+        }
+        
+        .detail-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .detail-item h4 {
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+

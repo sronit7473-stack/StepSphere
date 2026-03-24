@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Blog.css">
+    
+
+
+      <!--linking font-awesome from google-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size:19px;
+    transition: 0.3s;
+    position: relative;
+}
+.nav-links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.nav-links a:hover::before{
+    width: 100%;
+}
+
+
+.icons i:hover{
+      color: indianred;
+
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+    margin-right: 15px;
+
+}
+</style>
+<body>
+
+
+
+    <nav class="navbar">
+      
+        <div class="logo">
+           <a href="/HTML/Home.html"><img src="/Image/StepSphereLogo.png" alt="Logo"></a> 
+        </div>
+
+        <div class="nav-links">
+            <a href="/HTML/Home.html">Home</a>
+            <a href="/HTML/Product.html">Product</a>
+            <a href="/HTML/Blog.html">Blog</a>
+            <a href="/HTML/Research.html">Research</a>
+            <a href="/HTML/About Us.html">About Us</a>
+        </div>
+        <div class="icons">
+            <i class="fa fa-search" style="margin-left: 15px;"></i>
+                <i class="fas fa-user-alt" style="margin-left: 15px;"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+             
+        </div>
+    </nav>
+  
+   <div class="featured-article">
+  <img src="/Image/Blog/home.jpg" alt="Featured Article Image" class="featured-image">
+   <div class="featured-content">
+    <h2>Top Stepsphere Trends 2025</h2>
+    <input type="checkbox" id="toggle-readmore" class="readmore-toggle">
+    <span class="excerpt">
+     We are trying at Stepsphere to change the way people think about shoes: they are not just the things on your feet, they are a part of how you move through life. These are part of your routine, show off your personal style and leave you feeling confident all day. You may be walking into a meeting, going to the gym, discovering new places or just running some errands that’s why the right footwear makes all difference. When we design buildings, we do so because that's what our clients need, that's where we can have impact and that’s just something we’re passionate about. You'll find from sleek formal shoes to laid back casuals and high performance sports shoes at Stepsphere, all of which reflect thoughtfulness to make them an expression of both fashion and functionality. Our products are focused very simply on comfort and durability and are only made with quality materials using a precise manufacturing process that ensures the highest standards. We know that your day is packed and our shoes will stay with you, whether for exercise, to work or to play - they're lightweight, supportive and made to last.  And shopping with us is easy too … shopping soft. But we have designed our website to offer you a trouble and hassle free experience, product descriptions that provide detailed information and images that are crystal clear. To make sure you’re completely satisfied we provide fast delivery and a simple returns process.
+
+    </span>
+    <span class="more-content">
+      We have a friendly group of customer support who is ready to help you at all times. We need every step you take at Stepsphere. We’re excited to provide you with footwear that not only looks good, but feels good too. Sign up for the Stepsphere community to learn how the right pair of shoes truly supports you one step at a time.
+
+    </span><br>
+    <label for="toggle-readmore" class="read-more">Read More</label>
+    <label for="toggle-readmore" class="read-less">Read Less</label>
+  </div>
+</div>
+
+<div class="text5"><h3>Categories</h3></div>
+   <div class="button-container">
+    <button class="toggle-btn" data-target="content1">Training Tips 🏃‍♂️</button>
+    <button class="toggle-btn" data-target="content2">Beginner Guides📘</button>
+    <button class="toggle-btn" data-target="content3">Advanced Techniques⚡️</button>
+    <button class="toggle-btn" data-target="content4">Stepsphere Maintenance🧽</button>
+  </div>
+
+  <div class="content" id="content1">- Stepsphere is so ready to get you into the future. The insoles we use with our smart shoes are AI designed and help adjust to your movement, so that you can train safely and without injury. Stepsphere has just the right fit for you if you are looking for shoes for sports, day to day wear or depend on your foot type for shoes. It’s also important to replace old, worn out shoes because you get the best performance from those. Our shoes have our 3D fit and are a roomy design meaning they fit small and large feet alike. Made with breathable, eco friendly material, they help you keep your feet cool, fresh and full of energy. We are talking about smart, comfortable and built for your way to move – only Stepsphere shoe.</div>
+  <div class="content" id="content2">- Using Stepsphere Beginner's Guide to Footwear, you will feel confident to kick start your fitness journey. In all the cases you are going to find the best arch support and cushioning of the arch support in the shape of the foot and the shape according to the activity. For instance, our tool will be also useful for you to pick up the right size and avoid the common defects when you use worn down shoes. In order to sweat less and increase endurance, train to be heavier and bulkier. One, one more good shoe, and all good steps to the goal depend on good shoes. So from the first day, we're preparing to take our Stepsphere beginners' hand and lead them through their stepsphere strong and motivated journey here at Stepsphere.</div>
+  <div class="content" id="content3">- This is what stepsphere is designed for, for that athlete that wants top performance from their footwear. Available in a range of fashionable and classic colours, these advanced shoes (with midsoles and energy return foams) put some beans behind your feet helping you run farther and kick harder. Still, due to their high tech design you need to ease into it. Because the shoes alter the natural way your foot lands and the way your muscles - particularly your calves - work, even seasoned users can take an upward approach in footwear training. By training this way over time your body gets used to it and helps you train better without upping the risk of injury. Stepsphere isn’t just shoes. It’s shoes with steps, guided by the leader in wearable technology for running. We created Stepsphere so you can step into the future of running.</div>
+  <div class="content" id="content4">- By reading simple Stepsphere footwear care tips you can ensure your Stepsphere footwear will be fresher for longer and last you longer. Sometimes, you should clean the shoes—with a damp cloth or lightly brush them to shake off the dirt. Brushing a good conditioner in to the leather shoes will leave it soft and crack free. To bring back shine and protect surface, give a polish in the same colour of matching polish. If you know the moisture and stain are the right ones, put some of that spray on the shoes and it will shield moisture and stain away. It has to make shoe trees and keep the shape and be able to soak in the moisture. Also Rotate your footware between wears so your footware has time to rest. There are easy steps you’ll follow to enjoy your Stepsphere shoes more.</div>
+
+  
+ 
+
+  
+  
+  
+  <div class="posts-section">
+    <h1>Recent Posts</h1>
+    <div class="posts-grid">
+        <div class="post-card">
+            <img src="/Image/Blog/timbbeeerr.jpeg" alt="Post 1">
+            <div class="post-details">
+                <h2>"Top Trending Professional Footwear Styles for Summer 2025"</h2>
+                <p>3 May, Anil Keshari Shah</p>
+                <a href="/HTML/Blog_category.html">Read More</a>
+            </div>
+        </div>
+  
+        <div class="post-card">
+            <img src="/Image/Blog/Sustainable-Shoe-Brands.jpg" alt="Post 2">
+            <div class="post-details">
+                <h2>"The Impact of Sustainable Materials in Modern Footwear" </h2>
+                <p>1 May, Binod Choudary</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+  
+        <div class="post-card">
+            <img src="/Image/Blog/shoes.jpeg" alt="Post 3">
+            <div class="post-details">
+                <h2>"5 Essential Stepsphere Maintenance Tips for Longer Wear"</h2>
+                <p>4 May, Ritesh Agrawal</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <section class="author-section">
+    <img src="/Image/Blog/anil-keshari-shah.pgp.jpeg" alt="Author Name" class="author-photo">
+    <div class="author-details">
+      <h2 class="author-name">Anil Keshari Shah</h2>
+      <p class="author-bio">
+        Anil is a footwear fanatic and a certified shoe specialist of over 10 years in the field. Practical tips along with the latest trends that he shares help readers choose the best available stepsphere options for them.
+      </p>
+      <div class="author-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="author-section">
+    <img src="/Image/Blog/binod.pgp.avif" alt="Author Name" class="author-photo">
+    <div class="author-details">
+      <h2 class="author-name">Binod Choudary</h2>
+      <p class="author-bio">
+        'The StepSphere provides the new norm for sleek interface, user friendly interface and stylish but performance orientated designs which are tailored for the contemporary living.'
+      </p>
+      <div class="author-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="author-section">
+    <img src="/Image/Blog/Ritesh-Agarwal.pgp.jpeg"alt="Author Name" class="author-photo">
+    <div class="author-details">
+      <h2 class="author-name">Ritesh Agrawal</h2>
+      <p class="author-bio">
+  TheStepSphere website blends innovation and comfort for a hassle-free find and a good quality footwear for every step.
+      </p>
+      <div class="author-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="/JavaScript/blog.js"></script>
+
+  <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Itahari, Nepal</p>
+                <p>stepsphere2025@gmail.com</p>
+                <p>021-545978</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links2">
+                    <!--External Links-->
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <!--Footer Links-->
+                <ul class="quick-links">
+                    <h3>Quick Links</h3>
+                    <li><a href="/HTML/Home.html">Home</a></li>
+                    <li><a href="/HTML/Product.html">Product</a></li>
+                    <li><a href="/HTML/Blog.html">Blog</a></li>
+                    <li><a href="/HTML/Research.html">Research</a></li>
+                    <li><a href="/HTML/About Us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <!--Footer Links-->
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+      
+    <hr>
+    <!--Copyright section-->
+    <div class="footer-bottom">
+      <p>&copy; StepSphere 'Step Ahead, Stay Ahead'. All rights reserved.</p>
+    </div>
+  </body>
+  </html>

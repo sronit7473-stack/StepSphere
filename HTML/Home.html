@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link with External CSS -->
+    <link rel="stylesheet" href="/CSS/Home.css">
+
+      <!--linking font-awesome from google-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    /* Internal CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size:19px;
+    transition: 0.3s;
+    position: relative;
+}
+.nav-links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.nav-links a:hover::before{
+    width: 100%;
+}
+
+
+.icons i:hover{
+      color: indianred;
+
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s;
+    margin-right: 15px;
+}
+</style>
+<!-- Main Content -->
+<body>
+
+    <nav class="navbar">
+      
+        <div class="logo">
+           <a href="/HTML/Home.html"><img src="/Image/StepSphereLogo.png" alt="Logo"></a> 
+        </div>
+
+        <div class="nav-links">
+            <a href="/HTML/Home.html">Home</a>
+            <a href="/HTML/Product.html">Product</a>
+            <a href="/HTML/Blog.html">Blog</a>
+            <a href="/HTML/Research.html">Research</a>
+            <a href="/HTML/About Us.html">About Us</a>
+        </div>
+        <div class="icons">
+            <i class="fa fa-search" style="margin-left: 30px;"></i>
+            <a href="login.html"><i class="fas fa-user-alt" style="margin-left: 13px;"></i></a> 
+            <a href="Product.html"><i class="fa fa-shopping-cart" ></i></a>
+             
+        </div>
+    </nav>
+  <!-- hero section -->
+   <div class="main">
+
+    <div class="first">
+
+      <div class="inner1">
+        <h1><b>Select Your New <br> Perfect Style</b></h1>
+        </div>
+        <div class="inner2">
+<p>Your style shows who you are. Whether you like something bold or simple, we have options for you.Browse our collection and find the look that fits you best. It's time to choose your perfect style.</p>
+<a href="/HTML/Product.html"><button> SHOP NOW</button></a>
+      </div>
+
+    </div>
+    <div class="second">
+<img src="/Image/Home/shoe.jpg" alt="hero image" height="800px" width="600px">
+    </div>
+   </div>
+ 
+<div class="text"><h1>New Arrivals</h1></div>
+
+ <section class="trending-container">
+    </div>
+    <div class="product">
+        <a href="/HTML/Product.html"><img src="/Image/Home/timberland.jpg" alt="product"></a>
+        <h1>Mens TimberLand</h1>
+        <p>$350 </p>
+    </div>
+    <div class="product">
+        <a href="/HTML/Product.html"><img src="/Image/Home/women shoe.jpg" alt="product"></a>
+        <h1>New Unisex Shoe</h1>
+        <p>$750.45 </p>
+    </div>
+    <div class="product">
+        <a href="/HTML/Product.html"><img src="/Image/Home/martin.jpg" alt="product"></a>
+        <h1>Dr Martens</h1>
+        <p>$450.99</p>
+    </div> 
+ </section>
+ <section class="video">
+    <div class="bottom video">
+        <video disablePictureInPicture autoplay loop>
+            <source src="/VIdeo/shoe.mp4" type="video/mp4">
+        </video>
+    </div>
+ </section>
+ <section class="new-container">
+    <div class="text2">
+        <h1>Popular Items</h1>
+        <p>Check out our most popular shoes! These top picks are loved for their comfort, style, and quality. Perfect for everyday wear or special occasions, they’re favorites among our customers. Grab your pair now before they’re gone!</p>    
+    </div>
+    <div class="arrival-container">
+        <div class="box">
+            <a href="/HTML/Product.html"><img src="/Image/Home/men leather shoe.jpg" alt="product"></a>
+             <h2>Men Leather Shoe</h2>
+             <p>Price:$750 </p>
+        </div>
+        <div class="box">
+            <a href="/HTML/Product.html"><img src="/Image/Home/women party shoe.jpg" alt="product"></a>
+            <h2>Women Party Shoe</h2>
+             <p>Price:$250 </p>
+        </div>
+        <div class="box">
+           <a href="/HTML/Product.html"><img src="/Image/Home/men low dunk.jpg" alt="product"></a>
+            <h2>Nike Unisex Shoe</h2>
+             <p>Price:$1300</p>
+        </div>       
+    </div>
+ </section>
+    <section class="last-div">
+        <div class="div1">
+            <img src="/Image/Home/abc.jpg" alt="div1">
+        </div>
+        <div class="div2">
+            <img src="/Image/Home/hello.jpg" alt="div2">
+        </div>
+        <div class="div-container">
+            <div class="div3">
+                <img src="/Image/Home/Birkenstock Outfit.jpg" alt="div3">
+            </div>
+            <div class="div4">
+                <img src="/Image/Home/div1.jpg" alt="div4">
+            </div>
+        </div>
+        
+    </section>
+
+      
+<hr>
+
+ <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Itahari, Nepal</p>
+                <p>stepsphere2025@gmail.com</p>
+                <p>021-545978</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links2">
+                    <!--External Links-->
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <!--Footer Links-->
+                <ul class="quick-links">
+                    <h3>Quick Links</h3>
+                    <li><a href="/HTML/Home.html">Home</a></li>
+                    <li><a href="/HTML/Product.html">Product</a></li>
+                    <li><a href="/HTML/Blog.html">Blog</a></li>
+                    <li><a href="/HTML/Research.html">Research</a></li>
+                    <li><a href="/HTML/About Us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <!--Footer Links-->
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Student Discount</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+      
+    <hr>
+    <!--Copyright section-->
+    <div class="footer-bottom">
+      <p>&copy; StepSphere 'Step Ahead, Stay Ahead'. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
+</html>
